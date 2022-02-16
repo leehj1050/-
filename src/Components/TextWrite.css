@@ -1,0 +1,25 @@
+.TextWrite {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em;
+}
+.titleArea,
+.UserArea,
+.contentArea {
+  width: 50%;
+  margin-bottom: 2em;
+}
+.contentArea {
+  height: 100%;
+}
+button {
+  margin-right: 20px;
+}

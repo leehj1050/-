@@ -1,0 +1,17 @@
+.clickUserPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.clickContentsWrap {
+  width: 50%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.clickContentsWrap div {
+  width: 100%;
+  height: 150px;
+}
