@@ -1,17 +1,26 @@
 import "./Pagination.css";
 
-export default function Pagination() {
+export default function Pagination({ perPage, totalPage, pageNation }) {
+  let pageNumber = [];
+
+  for (let i = 1; i <= Math.ceil(totalPage / perPage); i++) {
+    pageNumber.push(i);
+  }
+
   return (
     <div className="pagiNations">
-      <div>＜</div>
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>＞</div>
+      {pageNumber.map((page, idx) => {
+        return (
+          <div
+            key={idx}
+            onClick={() => {
+              pageNation(page);
+            }}
+          >
+            {page}
+          </div>
+        );
+      })}
     </div>
   );
 }
