@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Pagination from "./Pagination";
 import Detail from "./Detail";
 import "./TextList.css";
-import { useNavigate } from "react-router-dom";
 
 export default function TextList({
   resultPage,
@@ -14,8 +13,6 @@ export default function TextList({
   setUserName,
   NumberCheck,
 }) {
-  /* 네비게이터 */
-  let navigate = useNavigate();
   return (
     <div className="TextList">
       {/* 헤더부분 */}

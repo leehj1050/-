@@ -16,7 +16,8 @@ export default function Edit({
   const editClickFunc = () => {
     if (!(editTitle && editName && editText)) {
       alert("빠진부분이 없나 다시 확인해주세요");
-    } else {
+    } else if (window.confirm("수정 하시겠습니까?")) {
+      alert("수정 되었습니다");
       setNewUserWrite(
         newUserWrite.map((item) =>
           item.no === userNo
@@ -24,7 +25,6 @@ export default function Edit({
             : item
         )
       );
-      alert("수정 하시겠습니까?");
       navigate("/");
     }
   };

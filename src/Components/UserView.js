@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
@@ -51,9 +51,14 @@ export default function UserView({
 }) {
   /* 삭제 기능 */
   const deleteHandle = () => {
-    setNewUserWrite(newUserWrite.filter((item) => item.no !== userNo));
-    alert("삭제 하시겠습니까? 다시 되돌릴 수 없습니다!");
-    navigate("/");
+    if (window.confirm("삭제 하시겠습니까? 다시 되돌릴 수 없습니다!")) {
+      setNewUserWrite(newUserWrite.filter((item) => item.no !== userNo));
+      alert("삭제 되었습니다");
+      navigate("/");
+    } else {
+      alert("취소 되었습니다");
+      navigate("/userView");
+    }
   };
 
   /* 수정 버튼 */

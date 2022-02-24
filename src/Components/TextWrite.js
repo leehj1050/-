@@ -43,14 +43,16 @@ export default function TextWrite({
   const handleClick = () => {
     if (!(userTitle && userText && userName)) {
       alert("빠진부분이 없나 다시 확인해주세요");
-    } else {
-      alert("등록 하시겠습니까?");
+    } else if (window.confirm("등록 하시겠습니까?")) {
+      alert("등록 되었습니다");
       userValues();
       navigate("/");
       setUserTitle("");
       setUserText("");
       setUserName("");
       nextId++;
+    } else {
+      navigate("/write");
     }
   };
 

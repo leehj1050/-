@@ -26,8 +26,8 @@ function App() {
   let [newUserWrite, setNewUserWrite] = useState(Data);
 
   /* 페이지네이션 */
-  let [perPage, setPerPage] = useState(10);
-  let [totalPage, setTotalPage] = useState(newUserWrite.length);
+  let perPage = 10;
+  let totalPage = newUserWrite.length;
   let [currentPage, setCurrentPage] = useState(1);
 
   let lastOfIndex = currentPage * perPage;
