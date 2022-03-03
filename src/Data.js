@@ -9,7 +9,7 @@ const Data = [
   { no: 3, title: "제목없음", text: "내용도 없음~", userName: "공유" },
   {
     no: 4,
-    title: "Props 지옥이다!!",
+    title: "Props 지옥입니다",
     text: "props지옥입니다.",
     userName: "송강",
   },
@@ -21,8 +21,8 @@ const Data = [
     text: "총알이 두개~",
     userName: "이정재",
   },
-  { no: 8, title: "Redux배워야겠다", text: "내용8", userName: "오겜" },
-  { no: 9, title: "안녕하쇼!!!!!!!!", text: "내용9", userName: "허성태" },
+  { no: 8, title: "Redux배우기!", text: "내용8", userName: "오겜" },
+  { no: 9, title: "하하하", text: "내용9", userName: "허성태" },
   { no: 10, title: "내용10에 관한 제목", text: "내용10", userName: "강새벽" },
   {
     no: 11,
@@ -35,8 +35,8 @@ const Data = [
   { no: 14, title: "내용14에 관한 제목", text: "내용14", userName: "박민영" },
   {
     no: 15,
-    title: "Hello~ My friends~",
-    text: "Hi My Name is Jennie",
+    title: "Hello~ ",
+    text: "Hi~~",
     userName: "제니",
   },
 ];
