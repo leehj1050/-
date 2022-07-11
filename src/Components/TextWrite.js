@@ -2,7 +2,7 @@ import "./TextWrite.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
-let nextId = 16;
+let nextId = 6;
 export default function TextWrite({
   setUserTitle,
   setUserText,
